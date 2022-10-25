@@ -48,7 +48,7 @@
             this.button_customer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_customer.Location = new System.Drawing.Point(183, 220);
             this.button_customer.Name = "button_customer";
-            this.button_customer.Size = new System.Drawing.Size(100, 43);
+            this.button_customer.Size = new System.Drawing.Size(109, 43);
             this.button_customer.TabIndex = 1;
             this.button_customer.Text = "Customer";
             this.button_customer.UseVisualStyleBackColor = true;
@@ -57,9 +57,9 @@
             // button_reservation
             // 
             this.button_reservation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_reservation.Location = new System.Drawing.Point(524, 220);
+            this.button_reservation.Location = new System.Drawing.Point(509, 220);
             this.button_reservation.Name = "button_reservation";
-            this.button_reservation.Size = new System.Drawing.Size(100, 43);
+            this.button_reservation.Size = new System.Drawing.Size(115, 43);
             this.button_reservation.TabIndex = 2;
             this.button_reservation.Text = "Reservation";
             this.button_reservation.UseVisualStyleBackColor = true;
