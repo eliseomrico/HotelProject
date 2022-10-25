@@ -36,15 +36,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(296, 65);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(178, 82);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(205, 16);
+            this.label1.Size = new System.Drawing.Size(446, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Search by Customer/Reservation";
+            this.label1.Text = "Click below to Search by Customer or Reservation";
             // 
             // button_customer
             // 
-            this.button_customer.Location = new System.Drawing.Point(133, 220);
+            this.button_customer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_customer.Location = new System.Drawing.Point(183, 220);
             this.button_customer.Name = "button_customer";
             this.button_customer.Size = new System.Drawing.Size(100, 43);
             this.button_customer.TabIndex = 1;
@@ -54,7 +56,8 @@
             // 
             // button_reservation
             // 
-            this.button_reservation.Location = new System.Drawing.Point(557, 220);
+            this.button_reservation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_reservation.Location = new System.Drawing.Point(524, 220);
             this.button_reservation.Name = "button_reservation";
             this.button_reservation.Size = new System.Drawing.Size(100, 43);
             this.button_reservation.TabIndex = 2;
