@@ -1,3 +1,8 @@
+-- Program Name:        create-reservation.sql
+-- Date Last Modified:  10/28/2022
+-- Last Modified By:    Lauren Escobedo
+-- Program Description: RESERVATION table creation file
+
 CREATE TABLE RESERVATION (
     RES_NO              INT IDENTITY(1,1) PRIMARY KEY,     
     RES_EMP_ID          INT, --FOREIGN KEY REFERENCES EMPLOYEE(EMP_ID),
