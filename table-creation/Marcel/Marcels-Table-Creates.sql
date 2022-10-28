@@ -1,7 +1,7 @@
 ----======================================== CREDIT CARD TABLE ==================================================
  
 -- CREATE TABLE CREDIT_CARD(
---	credit_card_no         int,
+--	credit_card_no         nvarchar(20),
 --	credit_card_fname      nvarchar(30),
 --	credit_card_lname      nvarchar(30),
 --	credit_expire_date     nvarchar(10),
@@ -12,16 +12,16 @@
 
 ----======================================== CUSTOMER TABLE ==================================================
 
---CREATE TABLE CUSTOMER(
+-- CREATE TABLE CUSTOMER(
 --	cust_id                 int,
 --	cust_fname              nvarchar(30),
 --	cust_lname              nvarchar(30),
---	cust_phone              nvarchar(12),
---	cust_email              nvarchar(25),
---	cust_balance            decimal,
---	cust_credit_card_no     int,
+--	cust_phone              nvarchar(15),
+--	cust_balance            decimal(8,2),
+--          May need Constraint
+--	cust_credit_card_no     nvarchar(20),
 
---	CONSTRAINT FK_Child_Parent FOREIGN KEY (cust_credit_card_no)  
+--	CONSTRAINT FK_CUSTOMER_CREDIT_CARD FOREIGN KEY (cust_credit_card_no)  
 --	REFERENCES CREDIT_CARD (credit_card_no),
 
 --	PRIMARY KEY(cust_id)
@@ -30,14 +30,15 @@
 
 ----======================================== TRANSACTION TABLE ==================================================
 
---CREATE TABLE TRANSACTIONS (
---	trans_no         decimal,
---	trans_date       nvarchar(10),
---	trans_amt        decimal,
+-- CREATE TABLE TRANSACTIONS (
+--	trans_no         int,
+--	trans_date       date,
+--	trans_amt        decimal(8,2),
+--          Definitely need to add business Constraint so that amt cannot exceed 999,999
 --	trans_res_id     int,
 
 --	-- CONSTRAINT FK_TRANSACTION_RESERVATION FOREIGN KEY (trans_res_id),  
---	-- REFERENCES CREDIT_CARD (credit_card_no),
+--	-- REFERENCES RESERVATION (res_no),
 
 --	PRIMARY KEY(trans_no)
 --);
@@ -45,20 +46,20 @@
 
 ----======================================== EMPLOYEE TABLE ==================================================
 
-CREATE TABLE EMPLOYEE (
-	emp_id        int IDENTITY(1,1),
-	emp_fname     nvarchar(30),
-	emp_lname     nvarchar(30),
-	emp_title     nvarchar(15),
-	super_id      int,
-	emp_ssn       int,
+--CREATE TABLE EMPLOYEE (
+--	emp_id        int IDENTITY(1,1),
+--	emp_fname     nvarchar(30),
+--	emp_lname     nvarchar(30),
+--	emp_title     nvarchar(25),
+--	super_id      int, -- references supersvisor id # (Self-Ref)
+--	emp_ssn       int,
 
 
 	-- CONSTRAINT FK_TRANSACTION_RESERVATION FOREIGN KEY (trans_res_id),  
 	-- REFERENCES CREDIT_CARD (credit_card_no),
 
-	PRIMARY KEY(emp_id)
-);
+--	PRIMARY KEY(emp_id)
+--);
 
 
 ----======================================== TEST DATA ==================================================
