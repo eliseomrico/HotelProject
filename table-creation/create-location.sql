@@ -1,0 +1,8 @@
+CREATE TABLE LOCATION (
+    LOC_ID              INTEGER UNIQUE,
+    LOC_HOURS           NVARCHAR(200),
+    LOC_ADDRESS         NVARCHAR(50),
+    LOC_PHONE           NVARCHAR(15),
+    LOC_NAME            NVARCHAR(50),
+    LOC_SUPER_ID        INTEGER(6)
+);
