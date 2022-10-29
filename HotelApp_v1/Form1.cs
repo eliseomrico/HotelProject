@@ -1,14 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace HotelApp_v1
+namespace HotelMS
 {
     public partial class Form1 : Form
     {
@@ -17,16 +7,38 @@ namespace HotelApp_v1
             InitializeComponent();
         }
 
-        private void button_CUSTOMER_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
-            CustomerSearchForm customerSearchForm = new CustomerSearchForm();
-            customerSearchForm.ShowDialog();
+            
         }
 
-        private void button_RESERVATION_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            ReservationSearchForm reservationSearchForm = new ReservationSearchForm();
-            reservationSearchForm.ShowDialog();
+           
         }
+
+        private void spacerPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void logOut_Click(object sender, EventArgs e)
+        {
+            EmployeeLogin employeeLogin = new HotelMS.EmployeeLogin();
+            employeeLogin.Show();
+
+        }
+
+
     }
 }
