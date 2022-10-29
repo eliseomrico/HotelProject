@@ -49,6 +49,7 @@ CREATE TABLE EMPLOYEE (
 	emp_fname     nvarchar(30),
 	emp_lname     nvarchar(30),
 	emp_title     nvarchar(25),
+	emp_loc_id    int,
 	super_id      int, -- references supersvisor id # (Self-Ref)
 	emp_ssn       int,
 
@@ -94,19 +95,10 @@ CREATE TABLE ROOM_TYPE(
 --======================================== ROOM TABLE ==================================================
 CREATE TABLE ROOM (
     ROOM_NO             INT PRIMARY KEY,     
-    ROOM_LOCATION       INT,
+    ROOM_LOC       INT,
     ROOM_TYPE           INT,
     ROOM_AVAILABLE      NVARCHAR(1)
 );
-
-
---======================================== WORKS_AT TABLE ==================================================
-CREATE TABLE WORKS_AT (
-    EMP_ID                  INT,
-    LOC_ID                  INT, 
-    HOURS_WORKED            INT
-);
-
 
 --======================================== TEST DATA ==================================================
 --=====================================================================================================
