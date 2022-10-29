@@ -5,9 +5,9 @@
 
 CREATE TABLE LOCATION (
     LOC_ID              INT IDENTITY(1,1) PRIMARY KEY,
-    LOC_HOURS           NVARCHAR(200), -- confer with ashley and matt on how we are displaying hours
+    LOC_HOURS           NVARCHAR(200), 
     LOC_ADDRESS         NVARCHAR(50),
-    LOC_PHONE           NVARCHAR(15)r,
+    LOC_PHONE           NVARCHAR(15),
     LOC_NAME            NVARCHAR(50),
-    LOC_SUPER_ID        INT --FOREIGN KEY REFERENCES EMPLOYEE(EMP_ID)
+    LOC_SUPER_ID        INT FOREIGN KEY REFERENCES EMPLOYEE(EMP_ID)
 );
