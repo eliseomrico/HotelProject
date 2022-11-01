@@ -131,3 +131,35 @@
 --TYPE_PRICE,
 --TYPE_DESCRIPTION)
 --VALUES (5, 500.00, 'type 5')
+
+---- CUSTOMER INSERTIONS
+--INSERT INTO CUSTOMER (cust_fname,cust_lname,cust_phone,cust_balance) VALUES('Bob','Dylan','111-111-1111',100.00);
+--INSERT INTO CUSTOMER (cust_fname,cust_lname,cust_phone,cust_balance) VALUES('Mariah','Carrey','222-222-2222',200.00);
+--INSERT INTO CUSTOMER (cust_fname,cust_lname,cust_phone,cust_balance) VALUES('Kurt','Cobain','333-333-3333',300.00);
+--INSERT INTO CUSTOMER (cust_fname,cust_lname,cust_phone,cust_balance) VALUES('David','Bowie','444-444-4444',400.00);
+
+
+---- CREDIT CARD INSERTIONS
+--INSERT INTO CREDIT_CARD (credit_card_no,credit_card_fname,credit_card_lname,credit_expire_date,credit_sec_code)
+--   VALUES('1111 1111 1111 1111','Bob','Dylan','05/27',523);
+--INSERT INTO CREDIT_CARD (credit_card_no,credit_card_fname,credit_card_lname,credit_expire_date,credit_sec_code)
+--   VALUES('2222 2222 2222 2222','Mariah','Carrey','06/25',523);
+--INSERT INTO CREDIT_CARD (credit_card_no,credit_card_fname,credit_card_lname,credit_expire_date,credit_sec_code)
+--   VALUES('3333 3333 3333 3333','Kurt','Cobain','03/26',627);
+--INSERT INTO CREDIT_CARD (credit_card_no,credit_card_fname,credit_card_lname,credit_expire_date,credit_sec_code)
+--   VALUES('4444 4444 4444 4444','David','Bowie','01/28',523);
+
+
+---- REQUIRES LOCATION TO COME FIRST
+---- EMPLOYEE INSERTION
+--INSERT INTO EMPLOYEE (emp_fname,emp_lname,emp_title,emp_ssn) VALUES('Employee','One','Housekeeper',1234567);
+--INSERT INTO EMPLOYEE (emp_fname,emp_lname,emp_title,emp_ssn) VALUES('Employee','Two','Housekeeper',7654321);
+--INSERT INTO EMPLOYEE (emp_fname,emp_lname,emp_title,emp_ssn) VALUES('Employee','3','Front Desk',2468910);
+--INSERT INTO EMPLOYEE (emp_fname,emp_lname,emp_title,emp_ssn) VALUES('Employee','4','General Manager',1098642);
+
+
+-- TRANSACTIONS INSERTION
+--INSERT INTO TRANSACTIONS (trans_no, trans_date, trans_amt) VALUES(111111,'',100);
+--INSERT INTO TRANSACTIONS (trans_no, trans_date, trans_amt) VALUES(222222,'',100);
+--INSERT INTO TRANSACTIONS (trans_no, trans_date, trans_amt) VALUES(333333,'',100);
+--INSERT INTO TRANSACTIONS (trans_no, trans_date, trans_amt) VALUES(444444,'',100);
