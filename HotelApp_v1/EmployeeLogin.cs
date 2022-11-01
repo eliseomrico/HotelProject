@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace HotelApp_v1
 {
-    public partial class CheckOut : Form
+    public partial class EmployeeLogin : Form
     {
-        public CheckOut()
+        public EmployeeLogin()
         {
             InitializeComponent();
         }
 
-        private void button_submit_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
         }
