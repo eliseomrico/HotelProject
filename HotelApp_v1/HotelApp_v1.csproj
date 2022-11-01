@@ -46,29 +46,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CheckIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckIn.Designer.cs">
+      <DependentUpon>CheckIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckOut.Designer.cs">
+      <DependentUpon>CheckOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateCustomer.Designer.cs">
+      <DependentUpon>CreateCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateReservation.Designer.cs">
+      <DependentUpon>CreateReservation.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomerSearchForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CustomerSearchForm.Designer.cs">
       <DependentUpon>CustomerSearchForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="EditCustomer.cs">
+    <Compile Include="EmployeeLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EditCustomer.Designer.cs">
-      <DependentUpon>EditCustomer.cs</DependentUpon>
+    <Compile Include="EmployeeLogin.designer.cs">
+      <DependentUpon>EmployeeLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="EditReservation.cs">
+    <Compile Include="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EditReservation.Designer.cs">
-      <DependentUpon>EditReservation.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -78,11 +96,26 @@
     <Compile Include="ReservationSearchForm.Designer.cs">
       <DependentUpon>ReservationSearchForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CheckIn.resx">
+      <DependentUpon>CheckIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckOut.resx">
+      <DependentUpon>CheckOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateCustomer.resx">
+      <DependentUpon>CreateCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateReservation.resx">
+      <DependentUpon>CreateReservation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomerSearchForm.resx">
       <DependentUpon>CustomerSearchForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="EmployeeLogin.resx">
+      <DependentUpon>EmployeeLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

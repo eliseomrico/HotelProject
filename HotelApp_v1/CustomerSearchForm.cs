@@ -78,5 +78,11 @@ namespace HotelApp_v1
             button_search.Visible = true; // show search button
             changeTextBoxesReadOnlyStatus(true); // make text boxes non-'editable' or read-only
         }
+
+        private void button_create_Click(object sender, EventArgs e)
+        {
+            CreateCustomer createCustomerForm = new CreateCustomer();
+            createCustomerForm.ShowDialog();
+        }
     }
 }
