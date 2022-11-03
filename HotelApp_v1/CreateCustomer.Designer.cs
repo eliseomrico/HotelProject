@@ -30,10 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateCustomer));
             this.label1 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox_cust_cc_number = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox_cust_phone_number = new System.Windows.Forms.TextBox();
             this.textBox_cust_lname = new System.Windows.Forms.TextBox();
@@ -43,7 +40,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button_submit = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox_cust_balance = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
@@ -62,17 +58,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Create Customer";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(160, 430);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(209, 20);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Customer Credit Card Number";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -83,25 +68,6 @@
             this.label5.Size = new System.Drawing.Size(175, 20);
             this.label5.TabIndex = 5;
             this.label5.Text = "Customer Phone Number";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.White;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(160, 510);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(128, 20);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "Customer Balance";
-            // 
-            // textBox_cust_cc_number
-            // 
-            this.textBox_cust_cc_number.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_cust_cc_number.Location = new System.Drawing.Point(160, 460);
-            this.textBox_cust_cc_number.Name = "textBox_cust_cc_number";
-            this.textBox_cust_cc_number.Size = new System.Drawing.Size(227, 27);
-            this.textBox_cust_cc_number.TabIndex = 12;
             // 
             // label4
             // 
@@ -187,12 +153,8 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.textBox_cust_id);
-            this.panel3.Controls.Add(this.textBox_cust_balance);
             this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.label7);
-            this.panel3.Controls.Add(this.textBox_cust_cc_number);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.textBox_cust_phone_number);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.textBox_cust_lname);
@@ -203,14 +165,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(587, 633);
             this.panel3.TabIndex = 22;
-            // 
-            // textBox_cust_balance
-            // 
-            this.textBox_cust_balance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_cust_balance.Location = new System.Drawing.Point(160, 540);
-            this.textBox_cust_balance.Name = "textBox_cust_balance";
-            this.textBox_cust_balance.Size = new System.Drawing.Size(227, 27);
-            this.textBox_cust_balance.TabIndex = 19;
             // 
             // panel1
             // 
@@ -257,17 +211,13 @@
         private System.Windows.Forms.Button button_submit;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox_cust_id;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox_cust_cc_number;
         private System.Windows.Forms.TextBox textBox_cust_phone_number;
         private System.Windows.Forms.TextBox textBox_cust_lname;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox_cust_fname;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox_cust_balance;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
