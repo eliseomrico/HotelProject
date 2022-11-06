@@ -18,6 +18,31 @@ namespace HotelApp_v1
             InitializeComponent();
         }
 
+        private void viewButtonsForAdmin(bool view) // after login for admin display all buttons
+        {
+            button_home_page_employees.Visible = view;
+            button_home_page_locations.Visible = view;
+            button_home_page_search_res.Visible = view;
+            button_home_page_room_avail.Visible = view;
+            button_home_page_cust_search.Visible = view;
+            button_home_page_checkin.Visible = view;
+            button_home_page_check_out.Visible = view;
+            button_home_page_log_out.Visible = view;
+            button_home_page_login.Visible = !view;
+        }
+
+        private void viewButtonsForRegEmployee(bool view) // after login for regular employee display the following buttons
+        {
+            button_home_page_locations.Visible = view;
+            button_home_page_search_res.Visible = view;
+            button_home_page_room_avail.Visible = view;
+            button_home_page_cust_search.Visible = view;
+            button_home_page_checkin.Visible = view;
+            button_home_page_check_out.Visible = view;
+            button_home_page_log_out.Visible = view;
+            button_home_page_login.Visible = !view;
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
             
@@ -41,7 +66,8 @@ namespace HotelApp_v1
 
         private void button_home_page_room_avail_Click(object sender, EventArgs e)
         {
-
+            RoomAvailabilityForm roomAvailabilityForm = new RoomAvailabilityForm();
+            roomAvailabilityForm.ShowDialog();
         }
 
         private void button_home_page_cust_search_Click(object sender, EventArgs e)
@@ -66,6 +92,12 @@ namespace HotelApp_v1
         {
             ReservationSearchForm reservationSearchForm = new ReservationSearchForm();
             reservationSearchForm.ShowDialog();
+        }
+
+        private void button_home_page_login_Click(object sender, EventArgs e)
+        {
+            EmployeeLogin employeeLoginForm = new EmployeeLogin();
+            employeeLoginForm.ShowDialog();
         }
     }
 }

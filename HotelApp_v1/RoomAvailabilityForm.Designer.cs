@@ -32,15 +32,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button_search = new System.Windows.Forms.Button();
-            this.button_create = new System.Windows.Forms.Button();
-            this.button_delete = new System.Windows.Forms.Button();
-            this.button_edit = new System.Windows.Forms.Button();
             this.button_finish_edit = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.comboBox_location_name = new System.Windows.Forms.ComboBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -52,9 +49,6 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(79)))));
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.button_search);
-            this.panel1.Controls.Add(this.button_create);
-            this.panel1.Controls.Add(this.button_delete);
-            this.panel1.Controls.Add(this.button_edit);
             this.panel1.Controls.Add(this.button_finish_edit);
             this.panel1.Location = new System.Drawing.Point(-3, 0);
             this.panel1.Name = "panel1";
@@ -79,56 +73,12 @@
             this.button_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_search.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_search.ForeColor = System.Drawing.Color.White;
-            this.button_search.Location = new System.Drawing.Point(3, 470);
+            this.button_search.Location = new System.Drawing.Point(0, 478);
             this.button_search.Name = "button_search";
-            this.button_search.Size = new System.Drawing.Size(214, 82);
+            this.button_search.Size = new System.Drawing.Size(214, 70);
             this.button_search.TabIndex = 15;
-            this.button_search.Text = "Search";
+            this.button_search.Text = "Manage Rooms";
             this.button_search.UseVisualStyleBackColor = false;
-            // 
-            // button_create
-            // 
-            this.button_create.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(79)))));
-            this.button_create.FlatAppearance.BorderSize = 0;
-            this.button_create.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_create.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_create.ForeColor = System.Drawing.Color.White;
-            this.button_create.Location = new System.Drawing.Point(3, 224);
-            this.button_create.Name = "button_create";
-            this.button_create.Size = new System.Drawing.Size(214, 82);
-            this.button_create.TabIndex = 19;
-            this.button_create.Text = "Create";
-            this.button_create.UseVisualStyleBackColor = false;
-            // 
-            // button_delete
-            // 
-            this.button_delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(79)))));
-            this.button_delete.FlatAppearance.BorderSize = 0;
-            this.button_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_delete.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_delete.ForeColor = System.Drawing.Color.White;
-            this.button_delete.Location = new System.Drawing.Point(3, 306);
-            this.button_delete.Name = "button_delete";
-            this.button_delete.Size = new System.Drawing.Size(214, 82);
-            this.button_delete.TabIndex = 16;
-            this.button_delete.Text = "Delete";
-            this.button_delete.UseVisualStyleBackColor = false;
-            this.button_delete.Visible = false;
-            // 
-            // button_edit
-            // 
-            this.button_edit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(79)))));
-            this.button_edit.FlatAppearance.BorderSize = 0;
-            this.button_edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_edit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_edit.ForeColor = System.Drawing.Color.White;
-            this.button_edit.Location = new System.Drawing.Point(3, 388);
-            this.button_edit.Name = "button_edit";
-            this.button_edit.Size = new System.Drawing.Size(214, 82);
-            this.button_edit.TabIndex = 17;
-            this.button_edit.Text = "Edit";
-            this.button_edit.UseVisualStyleBackColor = false;
-            this.button_edit.Visible = false;
             // 
             // button_finish_edit
             // 
@@ -137,18 +87,18 @@
             this.button_finish_edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_finish_edit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_finish_edit.ForeColor = System.Drawing.Color.White;
-            this.button_finish_edit.Location = new System.Drawing.Point(3, 388);
+            this.button_finish_edit.Location = new System.Drawing.Point(0, 407);
             this.button_finish_edit.Name = "button_finish_edit";
-            this.button_finish_edit.Size = new System.Drawing.Size(214, 82);
+            this.button_finish_edit.Size = new System.Drawing.Size(214, 70);
             this.button_finish_edit.TabIndex = 18;
-            this.button_finish_edit.Text = "Save Edit";
+            this.button_finish_edit.Text = "Manage Locations";
             this.button_finish_edit.UseVisualStyleBackColor = false;
             this.button_finish_edit.Visible = false;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.comboBox1);
+            this.panel2.Controls.Add(this.comboBox_location_name);
             this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label8);
@@ -157,27 +107,16 @@
             this.panel2.Size = new System.Drawing.Size(582, 548);
             this.panel2.TabIndex = 22;
             // 
-            // label1
+            // comboBox_location_name
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(122, 124);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Location Name";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(105, 30);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(389, 28);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "Enter Reservation ID and click Search below";
+            this.comboBox_location_name.BackColor = System.Drawing.Color.White;
+            this.comboBox_location_name.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.comboBox_location_name.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_location_name.FormattingEnabled = true;
+            this.comboBox_location_name.Location = new System.Drawing.Point(255, 124);
+            this.comboBox_location_name.Name = "comboBox_location_name";
+            this.comboBox_location_name.Size = new System.Drawing.Size(208, 28);
+            this.comboBox_location_name.TabIndex = 16;
             // 
             // dataGridView1
             // 
@@ -189,13 +128,27 @@
             this.dataGridView1.Size = new System.Drawing.Size(579, 372);
             this.dataGridView1.TabIndex = 15;
             // 
-            // comboBox1
+            // label1
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(269, 124);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(208, 24);
-            this.comboBox1.TabIndex = 16;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(104, 124);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(110, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Location Name";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.White;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(46, 32);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(494, 28);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "Choose desired location to view rooms and room types";
             // 
             // RoomAvailabilityForm
             // 
@@ -220,14 +173,11 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button_search;
-        private System.Windows.Forms.Button button_create;
-        private System.Windows.Forms.Button button_delete;
-        private System.Windows.Forms.Button button_edit;
         private System.Windows.Forms.Button button_finish_edit;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox_location_name;
     }
 }

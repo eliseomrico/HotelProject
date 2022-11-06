@@ -70,6 +70,12 @@
     <Compile Include="CreateReservation.Designer.cs">
       <DependentUpon>CreateReservation.cs</DependentUpon>
     </Compile>
+    <Compile Include="CreateRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateRoom.Designer.cs">
+      <DependentUpon>CreateRoom.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomerSearchForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,11 +88,23 @@
     <Compile Include="EmployeeLogin.designer.cs">
       <DependentUpon>EmployeeLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="EmployeesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeesForm.Designer.cs">
+      <DependentUpon>EmployeesForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocationsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocationsForm.Designer.cs">
+      <DependentUpon>LocationsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -95,6 +113,18 @@
     </Compile>
     <Compile Include="ReservationSearchForm.Designer.cs">
       <DependentUpon>ReservationSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoomAvailabilityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomAvailabilityForm.Designer.cs">
+      <DependentUpon>RoomAvailabilityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoomsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomsForm.Designer.cs">
+      <DependentUpon>RoomsForm.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="CheckIn.resx">
       <DependentUpon>CheckIn.cs</DependentUpon>
@@ -114,8 +144,14 @@
     <EmbeddedResource Include="EmployeeLogin.resx">
       <DependentUpon>EmployeeLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EmployeesForm.resx">
+      <DependentUpon>EmployeesForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocationsForm.resx">
+      <DependentUpon>LocationsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -128,6 +164,12 @@
     </Compile>
     <EmbeddedResource Include="ReservationSearchForm.resx">
       <DependentUpon>ReservationSearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoomAvailabilityForm.resx">
+      <DependentUpon>RoomAvailabilityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoomsForm.resx">
+      <DependentUpon>RoomsForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

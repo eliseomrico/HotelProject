@@ -32,8 +32,11 @@ namespace HotelApp_v1
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.NavPanel = new System.Windows.Forms.Panel();
+            this.button_home_page_login = new System.Windows.Forms.Button();
             this.button_home_page_log_out = new System.Windows.Forms.Button();
             this.spacerPanel2 = new System.Windows.Forms.Panel();
+            this.button_home_page_employees = new System.Windows.Forms.Button();
+            this.button_home_page_locations = new System.Windows.Forms.Button();
             this.button_home_page_check_out = new System.Windows.Forms.Button();
             this.button_home_page_checkin = new System.Windows.Forms.Button();
             this.button_home_page_cust_search = new System.Windows.Forms.Button();
@@ -42,12 +45,14 @@ namespace HotelApp_v1
             this.spacerPanel = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.NavPanel.SuspendLayout();
+            this.spacerPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // NavPanel
             // 
             this.NavPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(31)))), ((int)(((byte)(55)))));
+            this.NavPanel.Controls.Add(this.button_home_page_login);
             this.NavPanel.Controls.Add(this.button_home_page_log_out);
             this.NavPanel.Controls.Add(this.spacerPanel2);
             this.NavPanel.Controls.Add(this.button_home_page_check_out);
@@ -62,6 +67,21 @@ namespace HotelApp_v1
             this.NavPanel.Name = "NavPanel";
             this.NavPanel.Size = new System.Drawing.Size(250, 545);
             this.NavPanel.TabIndex = 0;
+            // 
+            // button_home_page_login
+            // 
+            this.button_home_page_login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(79)))));
+            this.button_home_page_login.FlatAppearance.BorderSize = 0;
+            this.button_home_page_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_home_page_login.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_home_page_login.ForeColor = System.Drawing.Color.White;
+            this.button_home_page_login.Location = new System.Drawing.Point(0, 485);
+            this.button_home_page_login.Name = "button_home_page_login";
+            this.button_home_page_login.Size = new System.Drawing.Size(250, 60);
+            this.button_home_page_login.TabIndex = 20;
+            this.button_home_page_login.Text = "Log in";
+            this.button_home_page_login.UseVisualStyleBackColor = false;
+            this.button_home_page_login.Click += new System.EventHandler(this.button_home_page_login_Click);
             // 
             // button_home_page_log_out
             // 
@@ -86,12 +106,42 @@ namespace HotelApp_v1
             // spacerPanel2
             // 
             this.spacerPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(79)))));
+            this.spacerPanel2.Controls.Add(this.button_home_page_employees);
+            this.spacerPanel2.Controls.Add(this.button_home_page_locations);
             this.spacerPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.spacerPanel2.Location = new System.Drawing.Point(0, 360);
             this.spacerPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.spacerPanel2.Name = "spacerPanel2";
             this.spacerPanel2.Size = new System.Drawing.Size(250, 125);
             this.spacerPanel2.TabIndex = 6;
+            // 
+            // button_home_page_employees
+            // 
+            this.button_home_page_employees.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(79)))));
+            this.button_home_page_employees.FlatAppearance.BorderSize = 0;
+            this.button_home_page_employees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_home_page_employees.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_home_page_employees.ForeColor = System.Drawing.Color.White;
+            this.button_home_page_employees.Location = new System.Drawing.Point(0, 65);
+            this.button_home_page_employees.Name = "button_home_page_employees";
+            this.button_home_page_employees.Size = new System.Drawing.Size(250, 60);
+            this.button_home_page_employees.TabIndex = 22;
+            this.button_home_page_employees.Text = "Employees";
+            this.button_home_page_employees.UseVisualStyleBackColor = false;
+            // 
+            // button_home_page_locations
+            // 
+            this.button_home_page_locations.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(79)))));
+            this.button_home_page_locations.FlatAppearance.BorderSize = 0;
+            this.button_home_page_locations.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_home_page_locations.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_home_page_locations.ForeColor = System.Drawing.Color.White;
+            this.button_home_page_locations.Location = new System.Drawing.Point(0, 0);
+            this.button_home_page_locations.Name = "button_home_page_locations";
+            this.button_home_page_locations.Size = new System.Drawing.Size(250, 60);
+            this.button_home_page_locations.TabIndex = 21;
+            this.button_home_page_locations.Text = "Locations";
+            this.button_home_page_locations.UseVisualStyleBackColor = false;
             // 
             // button_home_page_check_out
             // 
@@ -232,6 +282,7 @@ namespace HotelApp_v1
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.NavPanel.ResumeLayout(false);
+            this.spacerPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -249,5 +300,8 @@ namespace HotelApp_v1
         private Button button_home_page_log_out;
         private Panel spacerPanel2;
         private PictureBox pictureBox1;
+        private Button button_home_page_login;
+        private Button button_home_page_employees;
+        private Button button_home_page_locations;
     }
 }
