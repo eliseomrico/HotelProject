@@ -36,7 +36,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox_res_id = new System.Windows.Forms.TextBox();
             this.textBox_res_emp_id = new System.Windows.Forms.TextBox();
             this.textBox_res_cust_id = new System.Windows.Forms.TextBox();
             this.textBox_res_loc_id = new System.Windows.Forms.TextBox();
@@ -50,11 +49,13 @@
             this.button_finish_edit = new System.Windows.Forms.Button();
             this.button_create = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.comboBox_res_id = new System.Windows.Forms.ComboBox();
+            this.button_submit_create = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -133,14 +134,6 @@
             this.label7.Size = new System.Drawing.Size(151, 20);
             this.label7.TabIndex = 6;
             this.label7.Text = "Reservation End Date";
-            // 
-            // textBox_res_id
-            // 
-            this.textBox_res_id.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_res_id.Location = new System.Drawing.Point(165, 120);
-            this.textBox_res_id.Name = "textBox_res_id";
-            this.textBox_res_id.Size = new System.Drawing.Size(227, 27);
-            this.textBox_res_id.TabIndex = 7;
             // 
             // textBox_res_emp_id
             // 
@@ -288,9 +281,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(79)))));
+            this.panel1.Controls.Add(this.button_create);
+            this.panel1.Controls.Add(this.button_submit_create);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.button_search);
-            this.panel1.Controls.Add(this.button_create);
             this.panel1.Controls.Add(this.button_delete);
             this.panel1.Controls.Add(this.button_edit);
             this.panel1.Controls.Add(this.button_finish_edit);
@@ -299,9 +293,21 @@
             this.panel1.Size = new System.Drawing.Size(217, 548);
             this.panel1.TabIndex = 20;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(3, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(215, 169);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 22;
+            this.pictureBox1.TabStop = false;
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.comboBox_res_id);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.textBox_res_emp_id);
             this.panel2.Controls.Add(this.textBox_res_cust_id);
@@ -315,23 +321,38 @@
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.textBox_res_id);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Location = new System.Drawing.Point(208, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(582, 548);
             this.panel2.TabIndex = 21;
             // 
-            // pictureBox1
+            // comboBox_res_id
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(215, 169);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 22;
-            this.pictureBox1.TabStop = false;
+            this.comboBox_res_id.BackColor = System.Drawing.Color.White;
+            this.comboBox_res_id.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.comboBox_res_id.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_res_id.FormattingEnabled = true;
+            this.comboBox_res_id.Location = new System.Drawing.Point(165, 120);
+            this.comboBox_res_id.Name = "comboBox_res_id";
+            this.comboBox_res_id.Size = new System.Drawing.Size(227, 28);
+            this.comboBox_res_id.TabIndex = 16;
+            // 
+            // button_submit_create
+            // 
+            this.button_submit_create.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(79)))));
+            this.button_submit_create.FlatAppearance.BorderSize = 0;
+            this.button_submit_create.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_submit_create.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_submit_create.ForeColor = System.Drawing.Color.White;
+            this.button_submit_create.Location = new System.Drawing.Point(3, 224);
+            this.button_submit_create.Name = "button_submit_create";
+            this.button_submit_create.Size = new System.Drawing.Size(214, 82);
+            this.button_submit_create.TabIndex = 23;
+            this.button_submit_create.Text = "Submit Create";
+            this.button_submit_create.UseVisualStyleBackColor = false;
+            this.button_submit_create.Visible = false;
+            this.button_submit_create.Click += new System.EventHandler(this.button_submit_create_Click);
             // 
             // ReservationSearchForm
             // 
@@ -344,9 +365,9 @@
             this.Name = "ReservationSearchForm";
             this.Text = "ReservationSearchForm";
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -360,7 +381,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox_res_id;
         private System.Windows.Forms.TextBox textBox_res_emp_id;
         private System.Windows.Forms.TextBox textBox_res_cust_id;
         private System.Windows.Forms.TextBox textBox_res_loc_id;
@@ -376,5 +396,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ComboBox comboBox_res_id;
+        private System.Windows.Forms.Button button_submit_create;
     }
 }

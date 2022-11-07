@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RoomAvailabilityForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button_search = new System.Windows.Forms.Button();
-            this.button_finish_edit = new System.Windows.Forms.Button();
+            this.button_manage_rooms = new System.Windows.Forms.Button();
+            this.button_manage_locations = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.comboBox_location_name = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -48,8 +48,8 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(79)))));
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.button_search);
-            this.panel1.Controls.Add(this.button_finish_edit);
+            this.panel1.Controls.Add(this.button_manage_rooms);
+            this.panel1.Controls.Add(this.button_manage_locations);
             this.panel1.Location = new System.Drawing.Point(-3, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(217, 548);
@@ -66,34 +66,36 @@
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
             // 
-            // button_search
+            // button_manage_rooms
             // 
-            this.button_search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(79)))));
-            this.button_search.FlatAppearance.BorderSize = 0;
-            this.button_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_search.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_search.ForeColor = System.Drawing.Color.White;
-            this.button_search.Location = new System.Drawing.Point(0, 478);
-            this.button_search.Name = "button_search";
-            this.button_search.Size = new System.Drawing.Size(214, 70);
-            this.button_search.TabIndex = 15;
-            this.button_search.Text = "Manage Rooms";
-            this.button_search.UseVisualStyleBackColor = false;
+            this.button_manage_rooms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(79)))));
+            this.button_manage_rooms.FlatAppearance.BorderSize = 0;
+            this.button_manage_rooms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_manage_rooms.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_manage_rooms.ForeColor = System.Drawing.Color.White;
+            this.button_manage_rooms.Location = new System.Drawing.Point(0, 478);
+            this.button_manage_rooms.Name = "button_manage_rooms";
+            this.button_manage_rooms.Size = new System.Drawing.Size(214, 70);
+            this.button_manage_rooms.TabIndex = 15;
+            this.button_manage_rooms.Text = "Manage Rooms";
+            this.button_manage_rooms.UseVisualStyleBackColor = false;
+            this.button_manage_rooms.Click += new System.EventHandler(this.button_manage_rooms_Click);
             // 
-            // button_finish_edit
+            // button_manage_locations
             // 
-            this.button_finish_edit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(79)))));
-            this.button_finish_edit.FlatAppearance.BorderSize = 0;
-            this.button_finish_edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_finish_edit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_finish_edit.ForeColor = System.Drawing.Color.White;
-            this.button_finish_edit.Location = new System.Drawing.Point(0, 407);
-            this.button_finish_edit.Name = "button_finish_edit";
-            this.button_finish_edit.Size = new System.Drawing.Size(214, 70);
-            this.button_finish_edit.TabIndex = 18;
-            this.button_finish_edit.Text = "Manage Locations";
-            this.button_finish_edit.UseVisualStyleBackColor = false;
-            this.button_finish_edit.Visible = false;
+            this.button_manage_locations.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(79)))));
+            this.button_manage_locations.FlatAppearance.BorderSize = 0;
+            this.button_manage_locations.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_manage_locations.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_manage_locations.ForeColor = System.Drawing.Color.White;
+            this.button_manage_locations.Location = new System.Drawing.Point(0, 407);
+            this.button_manage_locations.Name = "button_manage_locations";
+            this.button_manage_locations.Size = new System.Drawing.Size(214, 70);
+            this.button_manage_locations.TabIndex = 18;
+            this.button_manage_locations.Text = "Manage Locations";
+            this.button_manage_locations.UseVisualStyleBackColor = false;
+            this.button_manage_locations.Visible = false;
+            this.button_manage_locations.Click += new System.EventHandler(this.button_manage_locations_Click);
             // 
             // panel2
             // 
@@ -172,8 +174,8 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button_search;
-        private System.Windows.Forms.Button button_finish_edit;
+        private System.Windows.Forms.Button button_manage_rooms;
+        private System.Windows.Forms.Button button_manage_locations;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label8;

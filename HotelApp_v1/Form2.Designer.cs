@@ -128,6 +128,7 @@ namespace HotelApp_v1
             this.button_home_page_employees.TabIndex = 22;
             this.button_home_page_employees.Text = "Employees";
             this.button_home_page_employees.UseVisualStyleBackColor = false;
+            this.button_home_page_employees.Click += new System.EventHandler(this.button_home_page_employees_Click);
             // 
             // button_home_page_locations
             // 
@@ -142,6 +143,7 @@ namespace HotelApp_v1
             this.button_home_page_locations.TabIndex = 21;
             this.button_home_page_locations.Text = "Locations";
             this.button_home_page_locations.UseVisualStyleBackColor = false;
+            this.button_home_page_locations.Click += new System.EventHandler(this.button_home_page_locations_Click);
             // 
             // button_home_page_check_out
             // 

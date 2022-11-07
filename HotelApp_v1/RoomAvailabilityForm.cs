@@ -16,5 +16,17 @@ namespace HotelApp_v1
         {
             InitializeComponent();
         }
+
+        private void button_manage_locations_Click(object sender, EventArgs e)
+        {
+            LocationsForm locationsForm = new LocationsForm();
+            locationsForm.ShowDialog();
+        }
+
+        private void button_manage_rooms_Click(object sender, EventArgs e)
+        {
+            RoomsForm roomsForm = new RoomsForm();
+            roomsForm.ShowDialog();
+        }
     }
 }

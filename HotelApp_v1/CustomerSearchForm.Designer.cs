@@ -35,7 +35,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox_cust_id = new System.Windows.Forms.TextBox();
             this.textBox_cust_fname = new System.Windows.Forms.TextBox();
             this.textBox_cust_lname = new System.Windows.Forms.TextBox();
             this.textBox_cust_phone_num = new System.Windows.Forms.TextBox();
@@ -50,8 +49,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.comboBox_cust_id = new System.Windows.Forms.ComboBox();
+            this.button_submit_create = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -119,14 +121,6 @@
             this.label6.Size = new System.Drawing.Size(209, 20);
             this.label6.TabIndex = 5;
             this.label6.Text = "Customer Credit Card Number";
-            // 
-            // textBox_cust_id
-            // 
-            this.textBox_cust_id.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_cust_id.Location = new System.Drawing.Point(370, 140);
-            this.textBox_cust_id.Name = "textBox_cust_id";
-            this.textBox_cust_id.Size = new System.Drawing.Size(227, 27);
-            this.textBox_cust_id.TabIndex = 6;
             // 
             // textBox_cust_fname
             // 
@@ -265,8 +259,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(79)))));
-            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.button_create);
+            this.panel1.Controls.Add(this.button_submit_create);
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.button_delete);
             this.panel1.Controls.Add(this.button_search);
             this.panel1.Controls.Add(this.button_edit);
@@ -290,10 +285,38 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.comboBox_cust_id);
             this.panel2.Location = new System.Drawing.Point(208, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(580, 630);
             this.panel2.TabIndex = 19;
+            // 
+            // comboBox_cust_id
+            // 
+            this.comboBox_cust_id.BackColor = System.Drawing.Color.White;
+            this.comboBox_cust_id.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.comboBox_cust_id.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_cust_id.FormattingEnabled = true;
+            this.comboBox_cust_id.Location = new System.Drawing.Point(162, 140);
+            this.comboBox_cust_id.Name = "comboBox_cust_id";
+            this.comboBox_cust_id.Size = new System.Drawing.Size(227, 28);
+            this.comboBox_cust_id.TabIndex = 16;
+            // 
+            // button_submit_create
+            // 
+            this.button_submit_create.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(79)))));
+            this.button_submit_create.FlatAppearance.BorderSize = 0;
+            this.button_submit_create.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_submit_create.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_submit_create.ForeColor = System.Drawing.Color.White;
+            this.button_submit_create.Location = new System.Drawing.Point(0, 299);
+            this.button_submit_create.Name = "button_submit_create";
+            this.button_submit_create.Size = new System.Drawing.Size(214, 82);
+            this.button_submit_create.TabIndex = 21;
+            this.button_submit_create.Text = "Submit Create";
+            this.button_submit_create.UseVisualStyleBackColor = false;
+            this.button_submit_create.Visible = false;
+            this.button_submit_create.Click += new System.EventHandler(this.button_submit_create_Click);
             // 
             // CustomerSearchForm
             // 
@@ -307,7 +330,6 @@
             this.Controls.Add(this.textBox_cust_phone_num);
             this.Controls.Add(this.textBox_cust_lname);
             this.Controls.Add(this.textBox_cust_fname);
-            this.Controls.Add(this.textBox_cust_id);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -320,6 +342,7 @@
             this.Text = "CustomerSearchForm";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -333,7 +356,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox_cust_id;
         private System.Windows.Forms.TextBox textBox_cust_fname;
         private System.Windows.Forms.TextBox textBox_cust_lname;
         private System.Windows.Forms.TextBox textBox_cust_phone_num;
@@ -348,5 +370,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ComboBox comboBox_cust_id;
+        private System.Windows.Forms.Button button_submit_create;
     }
 }

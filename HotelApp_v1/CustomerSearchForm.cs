@@ -31,7 +31,7 @@ namespace HotelApp_v1
         }
         private void emptyTextBoxes()
         {
-            textBox_cust_id.Clear();
+            comboBox_cust_id.Text = "";
             textBox_cust_fname.Clear();
             textBox_cust_lname.Clear();
             textBox_cust_phone_num.Clear();
@@ -56,6 +56,7 @@ namespace HotelApp_v1
 
         private void button_edit_Click(object sender, EventArgs e)
         {
+            button_create.Visible = false;
             button_edit.Visible = false; // hide edit button
             button_finish_edit.Visible = true; // show save edit button
             button_delete.Visible = false; // hide delete button
@@ -72,6 +73,7 @@ namespace HotelApp_v1
 
         private void button_finish_edit_Click(object sender, EventArgs e)
         {
+            button_create.Visible = true;
             button_edit.Visible = true; // show edit button
             button_finish_edit.Visible = false; // hide save edit button
             button_delete.Visible = true; // show delete button
@@ -81,8 +83,24 @@ namespace HotelApp_v1
 
         private void button_create_Click(object sender, EventArgs e)
         {
-            CreateCustomer createCustomerForm = new CreateCustomer();
-            createCustomerForm.ShowDialog();
+            // used additional form to create customer, now staying on same form
+            // CreateCustomer createCustomerForm = new CreateCustomer(); 
+            // createCustomerForm.ShowDialog();
+
+            emptyTextBoxes(); // clears texts from text boxes
+            changeButtonsVisibility(false);
+            button_search.Visible = false;
+            button_create.Visible = false;
+            button_submit_create.Visible = true;
+        }
+
+        private void button_submit_create_Click(object sender, EventArgs e)
+        {
+            emptyTextBoxes(); // clears texts from text boxes
+            changeButtonsVisibility(true);
+            button_search.Visible = true;
+            button_create.Visible = true;
+            button_submit_create.Visible = false;
         }
     }
 }

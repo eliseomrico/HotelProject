@@ -99,5 +99,17 @@ namespace HotelApp_v1
             EmployeeLogin employeeLoginForm = new EmployeeLogin();
             employeeLoginForm.ShowDialog();
         }
+
+        private void button_home_page_employees_Click(object sender, EventArgs e)
+        {
+            EmployeesForm employeesForm = new EmployeesForm();
+            employeesForm.ShowDialog();
+        }
+
+        private void button_home_page_locations_Click(object sender, EventArgs e)
+        {
+            LocationsForm locationsForm = new LocationsForm();
+            locationsForm.ShowDialog();
+        }
     }
 }

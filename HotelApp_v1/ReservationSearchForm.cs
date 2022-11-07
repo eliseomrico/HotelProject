@@ -33,7 +33,7 @@ namespace HotelApp_v1
         }
         private void emptyTextBoxes() // clears text from text boxes
         {
-            textBox_res_id.Clear();
+            comboBox_res_id.Text = "";
             textBox_res_emp_id.Clear();
             textBox_res_cust_id.Clear();
             textBox_res_loc_id.Clear();
@@ -59,6 +59,7 @@ namespace HotelApp_v1
 
         private void button_edit_Click(object sender, EventArgs e)
         {
+            button_create.Visible = false;
             button_edit.Visible = false; // hide edit button
             button_finish_edit.Visible = true; // show save edit button
             button_delete.Visible = false; // hide delete button
@@ -77,6 +78,7 @@ namespace HotelApp_v1
 
         private void button_finish_edit_Click(object sender, EventArgs e)
         {
+            button_create.Visible = true;
             button_edit.Visible = true; // show edit button
             button_finish_edit.Visible = false; // hide save edit button
             button_delete.Visible = true; // show delete button
@@ -86,8 +88,24 @@ namespace HotelApp_v1
 
         private void button_create_Click(object sender, EventArgs e)
         {
-            CreateReservation createReservationForm = new CreateReservation();
-            createReservationForm.ShowDialog();
+            // used additional form to create customer, now staying on same form
+            // CreateReservation createReservationForm = new CreateReservation();
+            // createReservationForm.ShowDialog();
+
+            emptyTextBoxes(); // clears texts from text boxes
+            changeButtonsVisibility(false);
+            button_search.Visible = false;
+            button_create.Visible = false;
+            button_submit_create.Visible = true;
+        }
+
+        private void button_submit_create_Click(object sender, EventArgs e)
+        {
+            emptyTextBoxes(); // clears texts from text boxes
+            changeButtonsVisibility(true);
+            button_search.Visible = true;
+            button_create.Visible = true;
+            button_submit_create.Visible = false;
         }
     }
 }
