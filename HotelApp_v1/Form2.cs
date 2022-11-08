@@ -66,50 +66,66 @@ namespace HotelApp_v1
 
         private void button_home_page_room_avail_Click(object sender, EventArgs e)
         {
-            RoomAvailabilityForm roomAvailabilityForm = new RoomAvailabilityForm();
-            roomAvailabilityForm.ShowDialog();
+            //RoomAvailabilityForm roomAvailabilityForm = new RoomAvailabilityForm();
+            //roomAvailabilityForm.ShowDialog();
+
+            roomAvailability1.Visible = true;
         }
 
         private void button_home_page_cust_search_Click(object sender, EventArgs e)
         {
-            CustomerSearchForm customerSearchForm = new CustomerSearchForm();
-            customerSearchForm.ShowDialog();
+            //CustomerSearchForm customerSearchForm = new CustomerSearchForm();
+            //customerSearchForm.ShowDialog();
+
+            customerQueryForm1.Visible = true;
         }
 
         private void button_home_page_checkin_Click(object sender, EventArgs e)
         {
-            CheckIn checkInForm = new CheckIn();
-            checkInForm.ShowDialog();
+            //CheckIn checkInForm = new CheckIn();
+            //checkInForm.ShowDialog();
+
+            checkInForm1.Visible = true;
         }
 
         private void button_home_page_check_out_Click(object sender, EventArgs e)
         {
-            CheckOut checkOutForm = new CheckOut();
-            checkOutForm.ShowDialog();
+            //CheckOut checkOutForm = new CheckOut();
+            //checkOutForm.ShowDialog();
+
+            checkOutForm1.Visible = true;
         }
 
         private void button_home_page_search_res_Click(object sender, EventArgs e)
         {
-            ReservationSearchForm reservationSearchForm = new ReservationSearchForm();
-            reservationSearchForm.ShowDialog();
+            //ReservationSearchForm reservationSearchForm = new ReservationSearchForm();
+            //reservationSearchForm.ShowDialog();
+
+            reservationQueryForm1.Visible = true;
         }
 
         private void button_home_page_login_Click(object sender, EventArgs e)
         {
-            EmployeeLogin employeeLoginForm = new EmployeeLogin();
-            employeeLoginForm.ShowDialog();
+            //EmployeeLogin employeeLoginForm = new EmployeeLogin();
+            //employeeLoginForm.ShowDialog();
+
+            employeeLoginForm1.Visible = true;
         }
 
         private void button_home_page_employees_Click(object sender, EventArgs e)
         {
-            EmployeesForm employeesForm = new EmployeesForm();
-            employeesForm.ShowDialog();
+            //EmployeesForm employeesForm = new EmployeesForm();
+            //employeesForm.ShowDialog();
+
+            employees1.Visible = true;
         }
 
         private void button_home_page_locations_Click(object sender, EventArgs e)
         {
-            LocationsForm locationsForm = new LocationsForm();
-            locationsForm.ShowDialog();
+            //LocationsForm locationsForm = new LocationsForm();
+            //locationsForm.ShowDialog();
+
+            locations1.Visible = true;
         }
     }
 }
