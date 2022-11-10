@@ -46,23 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CheckIn.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CheckIn.Designer.cs">
-      <DependentUpon>CheckIn.cs</DependentUpon>
-    </Compile>
     <Compile Include="CheckInForm.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="CheckInForm.Designer.cs">
       <DependentUpon>CheckInForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CheckOut.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CheckOut.Designer.cs">
-      <DependentUpon>CheckOut.cs</DependentUpon>
     </Compile>
     <Compile Include="CheckOutForm.cs">
       <SubType>UserControl</SubType>
@@ -70,35 +58,11 @@
     <Compile Include="CheckOutForm.Designer.cs">
       <DependentUpon>CheckOutForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="CreateCustomer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CreateCustomer.Designer.cs">
-      <DependentUpon>CreateCustomer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CreateReservation.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CreateReservation.Designer.cs">
-      <DependentUpon>CreateReservation.cs</DependentUpon>
-    </Compile>
     <Compile Include="CustomerQueryForm.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="CustomerQueryForm.Designer.cs">
       <DependentUpon>CustomerQueryForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CustomerSearchForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CustomerSearchForm.Designer.cs">
-      <DependentUpon>CustomerSearchForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="EmployeeLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EmployeeLogin.designer.cs">
-      <DependentUpon>EmployeeLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="EmployeeLoginForm.cs">
       <SubType>UserControl</SubType>
@@ -112,12 +76,6 @@
     <Compile Include="Employees.Designer.cs">
       <DependentUpon>Employees.cs</DependentUpon>
     </Compile>
-    <Compile Include="EmployeesForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EmployeesForm.Designer.cs">
-      <DependentUpon>EmployeesForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,12 +88,6 @@
     <Compile Include="Locations.Designer.cs">
       <DependentUpon>Locations.cs</DependentUpon>
     </Compile>
-    <Compile Include="LocationsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LocationsForm.Designer.cs">
-      <DependentUpon>LocationsForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReservationQueryForm.cs">
@@ -144,56 +96,44 @@
     <Compile Include="ReservationQueryForm.Designer.cs">
       <DependentUpon>ReservationQueryForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReservationSearchForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ReservationSearchForm.Designer.cs">
-      <DependentUpon>ReservationSearchForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="RoomAvailability.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="RoomAvailability.Designer.cs">
       <DependentUpon>RoomAvailability.cs</DependentUpon>
     </Compile>
-    <Compile Include="RoomAvailabilityForm.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Rooms.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="RoomAvailabilityForm.Designer.cs">
-      <DependentUpon>RoomAvailabilityForm.cs</DependentUpon>
+    <Compile Include="Rooms.Designer.cs">
+      <DependentUpon>Rooms.cs</DependentUpon>
     </Compile>
-    <Compile Include="RoomsForm.cs">
-      <SubType>Form</SubType>
+    <Compile Include="ViewCustomers.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="RoomsForm.Designer.cs">
-      <DependentUpon>RoomsForm.cs</DependentUpon>
+    <Compile Include="ViewCustomers.Designer.cs">
+      <DependentUpon>ViewCustomers.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CheckIn.resx">
-      <DependentUpon>CheckIn.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="ViewLocations.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewLocations.Designer.cs">
+      <DependentUpon>ViewLocations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewReservations.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewReservations.Designer.cs">
+      <DependentUpon>ViewReservations.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CheckInForm.resx">
       <DependentUpon>CheckInForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CheckOut.resx">
-      <DependentUpon>CheckOut.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CheckOutForm.resx">
       <DependentUpon>CheckOutForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CreateCustomer.resx">
-      <DependentUpon>CreateCustomer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CreateReservation.resx">
-      <DependentUpon>CreateReservation.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CustomerQueryForm.resx">
       <DependentUpon>CustomerQueryForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CustomerSearchForm.resx">
-      <DependentUpon>CustomerSearchForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EmployeeLogin.resx">
-      <DependentUpon>EmployeeLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EmployeeLoginForm.resx">
       <DependentUpon>EmployeeLoginForm.cs</DependentUpon>
@@ -201,17 +141,11 @@
     <EmbeddedResource Include="Employees.resx">
       <DependentUpon>Employees.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EmployeesForm.resx">
-      <DependentUpon>EmployeesForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Locations.resx">
       <DependentUpon>Locations.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LocationsForm.resx">
-      <DependentUpon>LocationsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -225,17 +159,20 @@
     <EmbeddedResource Include="ReservationQueryForm.resx">
       <DependentUpon>ReservationQueryForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReservationSearchForm.resx">
-      <DependentUpon>ReservationSearchForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="RoomAvailability.resx">
       <DependentUpon>RoomAvailability.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RoomAvailabilityForm.resx">
-      <DependentUpon>RoomAvailabilityForm.cs</DependentUpon>
+    <EmbeddedResource Include="Rooms.resx">
+      <DependentUpon>Rooms.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RoomsForm.resx">
-      <DependentUpon>RoomsForm.cs</DependentUpon>
+    <EmbeddedResource Include="ViewCustomers.resx">
+      <DependentUpon>ViewCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocations.resx">
+      <DependentUpon>ViewLocations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewReservations.resx">
+      <DependentUpon>ViewReservations.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

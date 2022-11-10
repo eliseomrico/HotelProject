@@ -31,13 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeLoginForm));
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button_login = new System.Windows.Forms.Button();
+            this.button_home = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.empPassword = new System.Windows.Forms.TextBox();
             this.empID = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button_login = new System.Windows.Forms.Button();
-            this.button_home = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -68,6 +68,36 @@
             this.panel1.Size = new System.Drawing.Size(692, 545);
             this.panel1.TabIndex = 3;
             // 
+            // button_login
+            // 
+            this.button_login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(79)))));
+            this.button_login.FlatAppearance.BorderSize = 0;
+            this.button_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_login.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_login.ForeColor = System.Drawing.Color.White;
+            this.button_login.Location = new System.Drawing.Point(346, 501);
+            this.button_login.Name = "button_login";
+            this.button_login.Size = new System.Drawing.Size(346, 44);
+            this.button_login.TabIndex = 30;
+            this.button_login.Text = "Login";
+            this.button_login.UseVisualStyleBackColor = false;
+            this.button_login.Click += new System.EventHandler(this.button_login_Click);
+            // 
+            // button_home
+            // 
+            this.button_home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(79)))));
+            this.button_home.FlatAppearance.BorderSize = 0;
+            this.button_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_home.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_home.ForeColor = System.Drawing.Color.White;
+            this.button_home.Location = new System.Drawing.Point(0, 501);
+            this.button_home.Name = "button_home";
+            this.button_home.Size = new System.Drawing.Size(346, 44);
+            this.button_home.TabIndex = 29;
+            this.button_home.Text = "Home";
+            this.button_home.UseVisualStyleBackColor = false;
+            this.button_home.Click += new System.EventHandler(this.button_home_Click);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -75,9 +105,9 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(186, 311);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 20);
+            this.label2.Size = new System.Drawing.Size(94, 20);
             this.label2.TabIndex = 22;
-            this.label2.Text = "Password";
+            this.label2.Text = "Employee ID";
             // 
             // label1
             // 
@@ -86,9 +116,9 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(186, 228);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 20);
+            this.label1.Size = new System.Drawing.Size(79, 20);
             this.label1.TabIndex = 21;
-            this.label1.Text = "Customer ID";
+            this.label1.Text = "Last Name";
             // 
             // empPassword
             // 
@@ -119,35 +149,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            // 
-            // button_login
-            // 
-            this.button_login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(79)))));
-            this.button_login.FlatAppearance.BorderSize = 0;
-            this.button_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_login.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_login.ForeColor = System.Drawing.Color.White;
-            this.button_login.Location = new System.Drawing.Point(346, 501);
-            this.button_login.Name = "button_login";
-            this.button_login.Size = new System.Drawing.Size(346, 44);
-            this.button_login.TabIndex = 30;
-            this.button_login.Text = "Login";
-            this.button_login.UseVisualStyleBackColor = false;
-            // 
-            // button_home
-            // 
-            this.button_home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(79)))));
-            this.button_home.FlatAppearance.BorderSize = 0;
-            this.button_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_home.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_home.ForeColor = System.Drawing.Color.White;
-            this.button_home.Location = new System.Drawing.Point(0, 501);
-            this.button_home.Name = "button_home";
-            this.button_home.Size = new System.Drawing.Size(346, 44);
-            this.button_home.TabIndex = 29;
-            this.button_home.Text = "Home";
-            this.button_home.UseVisualStyleBackColor = false;
-            this.button_home.Click += new System.EventHandler(this.button_home_Click);
             // 
             // EmployeeLoginForm
             // 

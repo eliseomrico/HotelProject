@@ -1,6 +1,6 @@
 ﻿namespace HotelApp_v1
 {
-    partial class RoomAvailability
+    partial class ViewCustomers
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.rooms1 = new HotelApp_v1.Rooms();
-            this.button_manage_rooms = new System.Windows.Forms.Button();
+            this.customerQueryForm1 = new HotelApp_v1.CustomerQueryForm();
+            this.textBox_lname = new System.Windows.Forms.TextBox();
+            this.button_manage_customers = new System.Windows.Forms.Button();
             this.button_home = new System.Windows.Forms.Button();
-            this.comboBox_location_name = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -43,40 +43,48 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.rooms1);
-            this.panel2.Controls.Add(this.button_manage_rooms);
+            this.panel2.Controls.Add(this.customerQueryForm1);
+            this.panel2.Controls.Add(this.textBox_lname);
+            this.panel2.Controls.Add(this.button_manage_customers);
             this.panel2.Controls.Add(this.button_home);
-            this.panel2.Controls.Add(this.comboBox_location_name);
             this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(692, 545);
-            this.panel2.TabIndex = 23;
+            this.panel2.TabIndex = 24;
             // 
-            // rooms1
+            // customerQueryForm1
             // 
-            this.rooms1.Location = new System.Drawing.Point(0, 0);
-            this.rooms1.Name = "rooms1";
-            this.rooms1.Size = new System.Drawing.Size(692, 545);
-            this.rooms1.TabIndex = 27;
-            this.rooms1.Visible = false;
+            this.customerQueryForm1.Location = new System.Drawing.Point(0, 0);
+            this.customerQueryForm1.Name = "customerQueryForm1";
+            this.customerQueryForm1.Size = new System.Drawing.Size(692, 545);
+            this.customerQueryForm1.TabIndex = 28;
+            this.customerQueryForm1.Visible = false;
             // 
-            // button_manage_rooms
+            // textBox_lname
             // 
-            this.button_manage_rooms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(79)))));
-            this.button_manage_rooms.FlatAppearance.BorderSize = 0;
-            this.button_manage_rooms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_manage_rooms.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_manage_rooms.ForeColor = System.Drawing.Color.White;
-            this.button_manage_rooms.Location = new System.Drawing.Point(346, 501);
-            this.button_manage_rooms.Name = "button_manage_rooms";
-            this.button_manage_rooms.Size = new System.Drawing.Size(346, 44);
-            this.button_manage_rooms.TabIndex = 26;
-            this.button_manage_rooms.Text = "Manage Rooms";
-            this.button_manage_rooms.UseVisualStyleBackColor = false;
-            this.button_manage_rooms.Click += new System.EventHandler(this.button_manage_rooms_Click);
+            this.textBox_lname.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_lname.Location = new System.Drawing.Point(326, 124);
+            this.textBox_lname.Name = "textBox_lname";
+            this.textBox_lname.Size = new System.Drawing.Size(227, 27);
+            this.textBox_lname.TabIndex = 27;
+            // 
+            // button_manage_customers
+            // 
+            this.button_manage_customers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(79)))));
+            this.button_manage_customers.FlatAppearance.BorderSize = 0;
+            this.button_manage_customers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_manage_customers.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_manage_customers.ForeColor = System.Drawing.Color.White;
+            this.button_manage_customers.Location = new System.Drawing.Point(346, 501);
+            this.button_manage_customers.Name = "button_manage_customers";
+            this.button_manage_customers.Size = new System.Drawing.Size(346, 44);
+            this.button_manage_customers.TabIndex = 26;
+            this.button_manage_customers.Text = "Manage Customers";
+            this.button_manage_customers.UseVisualStyleBackColor = false;
+            this.button_manage_customers.Click += new System.EventHandler(this.button_manage_customers_Click);
             // 
             // button_home
             // 
@@ -89,20 +97,9 @@
             this.button_home.Name = "button_home";
             this.button_home.Size = new System.Drawing.Size(346, 44);
             this.button_home.TabIndex = 24;
-            this.button_home.Text = "Home";
+            this.button_home.Text = "Back";
             this.button_home.UseVisualStyleBackColor = false;
             this.button_home.Click += new System.EventHandler(this.button_home_Click);
-            // 
-            // comboBox_location_name
-            // 
-            this.comboBox_location_name.BackColor = System.Drawing.Color.White;
-            this.comboBox_location_name.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.comboBox_location_name.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox_location_name.FormattingEnabled = true;
-            this.comboBox_location_name.Location = new System.Drawing.Point(332, 124);
-            this.comboBox_location_name.Name = "comboBox_location_name";
-            this.comboBox_location_name.Size = new System.Drawing.Size(208, 28);
-            this.comboBox_location_name.TabIndex = 16;
             // 
             // dataGridView1
             // 
@@ -119,11 +116,11 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(159, 124);
+            this.label1.Location = new System.Drawing.Point(204, 127);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 20);
+            this.label1.Size = new System.Drawing.Size(79, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Location Name";
+            this.label1.Text = "Last Name";
             // 
             // label8
             // 
@@ -136,12 +133,12 @@
             this.label8.TabIndex = 14;
             this.label8.Text = "Choose desired location to view rooms and room types";
             // 
-            // RoomAvailability
+            // ViewCustomers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel2);
-            this.Name = "RoomAvailability";
+            this.Name = "ViewCustomers";
             this.Size = new System.Drawing.Size(692, 545);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -153,12 +150,12 @@
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ComboBox comboBox_location_name;
+        private System.Windows.Forms.Button button_manage_customers;
+        private System.Windows.Forms.Button button_home;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button_home;
-        private System.Windows.Forms.Button button_manage_rooms;
-        private Rooms rooms1;
+        private System.Windows.Forms.TextBox textBox_lname;
+        private CustomerQueryForm customerQueryForm1;
     }
 }

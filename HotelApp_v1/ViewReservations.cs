@@ -10,21 +10,21 @@ using System.Windows.Forms;
 
 namespace HotelApp_v1
 {
-    public partial class EmployeeLogin : Form
+    public partial class ViewReservations : UserControl
     {
-        public EmployeeLogin()
+        public ViewReservations()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button_manage_reservations_Click(object sender, EventArgs e)
         {
-
+            reservationQueryForm1.Visible = true;
         }
 
-        private void panel3_Paint(object sender, PaintEventArgs e)
+        private void button_home_Click(object sender, EventArgs e)
         {
-
+            this.Visible = false;
         }
     }
 }

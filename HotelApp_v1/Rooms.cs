@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HotelApp_v1
 {
-    public partial class ReservationQueryForm : UserControl
+    public partial class Rooms : UserControl
     {
-        public ReservationQueryForm()
+        public Rooms()
         {
             InitializeComponent();
         }
@@ -33,22 +33,19 @@ namespace HotelApp_v1
         }
         private void changeTextBoxesReadOnlyStatus(bool enable) // makes text boxes read-only or not read-only
         {
-            textBox_res_emp_id.ReadOnly = enable;
-            textBox_res_cust_id.ReadOnly = enable;
-            textBox_res_loc_id.ReadOnly = enable;
-            textBox_res_room_num.ReadOnly = enable;
-            dateTimePicker_start.Enabled = !enable;
-            dateTimePicker_end.Enabled = !enable;
+            textBox_room_type.ReadOnly = enable;
+            textBox_room_type_description.ReadOnly = enable;
+            textBox_room_price.ReadOnly = enable;
+            textBox_room_available.ReadOnly = enable;
         }
         private void emptyTextBoxes() // clears text from text boxes
         {
-            comboBox_res_id.Text = "";
-            textBox_res_emp_id.Clear();
-            textBox_res_cust_id.Clear();
-            textBox_res_loc_id.Clear();
-            textBox_res_room_num.Clear();
-            dateTimePicker_start.Value = DateTime.Now;
-            dateTimePicker_end.Value = DateTime.Now;
+            comboBox_room_num.Text = "";
+            comboBox_loc_id.Text = "";
+            textBox_room_type.Clear();
+            textBox_room_type_description.Clear();
+            textBox_room_price.Clear();
+            textBox_room_available.Clear();
         }
         private void changeButtonsEnabled(bool enable)
         {
@@ -57,8 +54,6 @@ namespace HotelApp_v1
             button_delete.Enabled = enable;
         }
 
-
-        // form buttons below
         private void button_home_Click(object sender, EventArgs e)
         {
             emptyTextBoxes();
@@ -73,10 +68,6 @@ namespace HotelApp_v1
 
         private void button_create_Click(object sender, EventArgs e)
         {
-            // used additional form to create customer, now staying on same form
-            // CreateReservation createReservationForm = new CreateReservation();
-            // createReservationForm.ShowDialog();
-
             emptyTextBoxes(); // clears texts from text boxes
             changeCreateButtonsVisibility(false);
             changeButtonsEnabled(false);
@@ -84,7 +75,6 @@ namespace HotelApp_v1
             button_submit_create.Enabled = true;
             changeCancelButton(true);
         }
-
         private void button_submit_create_Click(object sender, EventArgs e)
         {
             emptyTextBoxes(); // clears texts from text boxes
@@ -104,7 +94,6 @@ namespace HotelApp_v1
             button_search.Enabled = false; // disable search button
             changeCancelButton(true);
         }
-
         private void button_submit_edit_Click(object sender, EventArgs e)
         {
             changeEditButtonsVisibility(true);
@@ -117,8 +106,6 @@ namespace HotelApp_v1
 
         private void button_delete_Click(object sender, EventArgs e)
         {
-            // add delete logic here
-
             emptyTextBoxes(); // clears texts from text boxes
             changeButtonsEnabled(false); // hide edit and delete buttons
             changeTextBoxesReadOnlyStatus(true); // make text boxes read-only

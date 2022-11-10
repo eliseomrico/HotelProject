@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button_cancel = new System.Windows.Forms.Button();
+            this.button_submit_edit = new System.Windows.Forms.Button();
+            this.button_submit_create = new System.Windows.Forms.Button();
             this.button_search = new System.Windows.Forms.Button();
             this.button_delete = new System.Windows.Forms.Button();
             this.button_edit = new System.Windows.Forms.Button();
@@ -55,6 +58,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.button_cancel);
+            this.panel2.Controls.Add(this.button_submit_edit);
+            this.panel2.Controls.Add(this.button_submit_create);
             this.panel2.Controls.Add(this.button_search);
             this.panel2.Controls.Add(this.button_delete);
             this.panel2.Controls.Add(this.button_edit);
@@ -80,6 +86,57 @@
             this.panel2.Size = new System.Drawing.Size(692, 545);
             this.panel2.TabIndex = 23;
             // 
+            // button_cancel
+            // 
+            this.button_cancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(79)))));
+            this.button_cancel.Enabled = false;
+            this.button_cancel.FlatAppearance.BorderSize = 0;
+            this.button_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_cancel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_cancel.ForeColor = System.Drawing.Color.White;
+            this.button_cancel.Location = new System.Drawing.Point(553, 501);
+            this.button_cancel.Name = "button_cancel";
+            this.button_cancel.Size = new System.Drawing.Size(139, 44);
+            this.button_cancel.TabIndex = 44;
+            this.button_cancel.Text = "Cancel";
+            this.button_cancel.UseVisualStyleBackColor = false;
+            this.button_cancel.Visible = false;
+            this.button_cancel.Click += new System.EventHandler(this.button_cancel_Click);
+            // 
+            // button_submit_edit
+            // 
+            this.button_submit_edit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(79)))));
+            this.button_submit_edit.Enabled = false;
+            this.button_submit_edit.FlatAppearance.BorderSize = 0;
+            this.button_submit_edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_submit_edit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_submit_edit.ForeColor = System.Drawing.Color.White;
+            this.button_submit_edit.Location = new System.Drawing.Point(415, 501);
+            this.button_submit_edit.Name = "button_submit_edit";
+            this.button_submit_edit.Size = new System.Drawing.Size(139, 44);
+            this.button_submit_edit.TabIndex = 43;
+            this.button_submit_edit.Text = "Submit Edit";
+            this.button_submit_edit.UseVisualStyleBackColor = false;
+            this.button_submit_edit.Visible = false;
+            this.button_submit_edit.Click += new System.EventHandler(this.button_submit_edit_Click);
+            // 
+            // button_submit_create
+            // 
+            this.button_submit_create.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(79)))));
+            this.button_submit_create.Enabled = false;
+            this.button_submit_create.FlatAppearance.BorderSize = 0;
+            this.button_submit_create.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_submit_create.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_submit_create.ForeColor = System.Drawing.Color.White;
+            this.button_submit_create.Location = new System.Drawing.Point(276, 501);
+            this.button_submit_create.Name = "button_submit_create";
+            this.button_submit_create.Size = new System.Drawing.Size(139, 44);
+            this.button_submit_create.TabIndex = 42;
+            this.button_submit_create.Text = "Submit Create";
+            this.button_submit_create.UseVisualStyleBackColor = false;
+            this.button_submit_create.Visible = false;
+            this.button_submit_create.Click += new System.EventHandler(this.button_submit_create_Click);
+            // 
             // button_search
             // 
             this.button_search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(79)))));
@@ -93,10 +150,12 @@
             this.button_search.TabIndex = 41;
             this.button_search.Text = "Search";
             this.button_search.UseVisualStyleBackColor = false;
+            this.button_search.Click += new System.EventHandler(this.button_search_Click);
             // 
             // button_delete
             // 
             this.button_delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(79)))));
+            this.button_delete.Enabled = false;
             this.button_delete.FlatAppearance.BorderSize = 0;
             this.button_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_delete.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -107,10 +166,12 @@
             this.button_delete.TabIndex = 40;
             this.button_delete.Text = "Delete";
             this.button_delete.UseVisualStyleBackColor = false;
+            this.button_delete.Click += new System.EventHandler(this.button_delete_Click);
             // 
             // button_edit
             // 
             this.button_edit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(79)))));
+            this.button_edit.Enabled = false;
             this.button_edit.FlatAppearance.BorderSize = 0;
             this.button_edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_edit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -121,10 +182,12 @@
             this.button_edit.TabIndex = 39;
             this.button_edit.Text = "Edit";
             this.button_edit.UseVisualStyleBackColor = false;
+            this.button_edit.Click += new System.EventHandler(this.button_edit_Click);
             // 
             // button_create
             // 
             this.button_create.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(79)))));
+            this.button_create.Enabled = false;
             this.button_create.FlatAppearance.BorderSize = 0;
             this.button_create.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_create.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -135,6 +198,7 @@
             this.button_create.TabIndex = 38;
             this.button_create.Text = "Create";
             this.button_create.UseVisualStyleBackColor = false;
+            this.button_create.Click += new System.EventHandler(this.button_create_Click);
             // 
             // button_home
             // 
@@ -147,7 +211,7 @@
             this.button_home.Name = "button_home";
             this.button_home.Size = new System.Drawing.Size(138, 44);
             this.button_home.TabIndex = 37;
-            this.button_home.Text = "Home";
+            this.button_home.Text = "Back";
             this.button_home.UseVisualStyleBackColor = false;
             this.button_home.Click += new System.EventHandler(this.button_home_Click);
             // 
@@ -340,5 +404,8 @@
         private System.Windows.Forms.Button button_edit;
         private System.Windows.Forms.Button button_create;
         private System.Windows.Forms.Button button_home;
+        private System.Windows.Forms.Button button_submit_create;
+        private System.Windows.Forms.Button button_submit_edit;
+        private System.Windows.Forms.Button button_cancel;
     }
 }

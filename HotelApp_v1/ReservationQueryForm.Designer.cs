@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button_cancel = new System.Windows.Forms.Button();
+            this.button_submit_create = new System.Windows.Forms.Button();
+            this.button_submit_edit = new System.Windows.Forms.Button();
             this.dateTimePicker_end = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker_start = new System.Windows.Forms.DateTimePicker();
             this.button_search = new System.Windows.Forms.Button();
@@ -49,14 +52,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.button_submit_edit = new System.Windows.Forms.Button();
-            this.button_submit_create = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.button_cancel);
             this.panel2.Controls.Add(this.button_submit_create);
             this.panel2.Controls.Add(this.button_submit_edit);
             this.panel2.Controls.Add(this.dateTimePicker_end);
@@ -83,6 +85,57 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(692, 545);
             this.panel2.TabIndex = 23;
+            // 
+            // button_cancel
+            // 
+            this.button_cancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(79)))));
+            this.button_cancel.Enabled = false;
+            this.button_cancel.FlatAppearance.BorderSize = 0;
+            this.button_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_cancel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_cancel.ForeColor = System.Drawing.Color.White;
+            this.button_cancel.Location = new System.Drawing.Point(553, 501);
+            this.button_cancel.Name = "button_cancel";
+            this.button_cancel.Size = new System.Drawing.Size(139, 44);
+            this.button_cancel.TabIndex = 32;
+            this.button_cancel.Text = "Cancel";
+            this.button_cancel.UseVisualStyleBackColor = false;
+            this.button_cancel.Visible = false;
+            this.button_cancel.Click += new System.EventHandler(this.button_cancel_Click);
+            // 
+            // button_submit_create
+            // 
+            this.button_submit_create.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(79)))));
+            this.button_submit_create.Enabled = false;
+            this.button_submit_create.FlatAppearance.BorderSize = 0;
+            this.button_submit_create.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_submit_create.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_submit_create.ForeColor = System.Drawing.Color.White;
+            this.button_submit_create.Location = new System.Drawing.Point(276, 501);
+            this.button_submit_create.Name = "button_submit_create";
+            this.button_submit_create.Size = new System.Drawing.Size(139, 44);
+            this.button_submit_create.TabIndex = 31;
+            this.button_submit_create.Text = "Submit Create";
+            this.button_submit_create.UseVisualStyleBackColor = false;
+            this.button_submit_create.Visible = false;
+            this.button_submit_create.Click += new System.EventHandler(this.button_submit_create_Click);
+            // 
+            // button_submit_edit
+            // 
+            this.button_submit_edit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(79)))));
+            this.button_submit_edit.Enabled = false;
+            this.button_submit_edit.FlatAppearance.BorderSize = 0;
+            this.button_submit_edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_submit_edit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_submit_edit.ForeColor = System.Drawing.Color.White;
+            this.button_submit_edit.Location = new System.Drawing.Point(415, 501);
+            this.button_submit_edit.Name = "button_submit_edit";
+            this.button_submit_edit.Size = new System.Drawing.Size(139, 44);
+            this.button_submit_edit.TabIndex = 30;
+            this.button_submit_edit.Text = "Submit Edit";
+            this.button_submit_edit.UseVisualStyleBackColor = false;
+            this.button_submit_edit.Visible = false;
+            this.button_submit_edit.Click += new System.EventHandler(this.button_submit_edit_Click);
             // 
             // dateTimePicker_end
             // 
@@ -174,7 +227,7 @@
             this.button_home.Name = "button_home";
             this.button_home.Size = new System.Drawing.Size(138, 44);
             this.button_home.TabIndex = 23;
-            this.button_home.Text = "Home";
+            this.button_home.Text = "Back";
             this.button_home.UseVisualStyleBackColor = false;
             this.button_home.Click += new System.EventHandler(this.button_home_Click);
             // 
@@ -313,40 +366,6 @@
             this.label7.TabIndex = 6;
             this.label7.Text = "Reservation End Date";
             // 
-            // button_submit_edit
-            // 
-            this.button_submit_edit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(79)))));
-            this.button_submit_edit.Enabled = false;
-            this.button_submit_edit.FlatAppearance.BorderSize = 0;
-            this.button_submit_edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_submit_edit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_submit_edit.ForeColor = System.Drawing.Color.White;
-            this.button_submit_edit.Location = new System.Drawing.Point(415, 501);
-            this.button_submit_edit.Name = "button_submit_edit";
-            this.button_submit_edit.Size = new System.Drawing.Size(139, 44);
-            this.button_submit_edit.TabIndex = 30;
-            this.button_submit_edit.Text = "Submit Edit";
-            this.button_submit_edit.UseVisualStyleBackColor = false;
-            this.button_submit_edit.Visible = false;
-            this.button_submit_edit.Click += new System.EventHandler(this.button_submit_edit_Click);
-            // 
-            // button_submit_create
-            // 
-            this.button_submit_create.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(79)))));
-            this.button_submit_create.Enabled = false;
-            this.button_submit_create.FlatAppearance.BorderSize = 0;
-            this.button_submit_create.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_submit_create.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_submit_create.ForeColor = System.Drawing.Color.White;
-            this.button_submit_create.Location = new System.Drawing.Point(276, 501);
-            this.button_submit_create.Name = "button_submit_create";
-            this.button_submit_create.Size = new System.Drawing.Size(139, 44);
-            this.button_submit_create.TabIndex = 31;
-            this.button_submit_create.Text = "Submit Create";
-            this.button_submit_create.UseVisualStyleBackColor = false;
-            this.button_submit_create.Visible = false;
-            this.button_submit_create.Click += new System.EventHandler(this.button_submit_create_Click);
-            // 
             // ReservationQueryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -385,5 +404,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker_start;
         private System.Windows.Forms.Button button_submit_edit;
         private System.Windows.Forms.Button button_submit_create;
+        private System.Windows.Forms.Button button_cancel;
     }
 }

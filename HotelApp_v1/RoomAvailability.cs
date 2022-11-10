@@ -21,5 +21,10 @@ namespace HotelApp_v1
         {
             this.Visible = false;
         }
+
+        private void button_manage_rooms_Click(object sender, EventArgs e)
+        {
+            rooms1.Visible = true;
+        }
     }
 }
